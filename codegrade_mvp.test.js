@@ -53,6 +53,11 @@ describe('index.html', () => {
         expect(allImages.length).toBe(4);
         expect(allImageSrcs).toEqual(expect.arrayContaining(expectedImgSrcsArr));
     });
+
+    it('renders the correct four subheading h2', () => {
+        const h2Arr = container.querySelectorAll('h2');
+        expect(h2Arr.length).toBe(5);
+    });
     
 
 });
