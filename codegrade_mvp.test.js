@@ -40,6 +40,20 @@ describe('index.html', () => {
         expect(getByText(headerNavLinks, /Catering/i)).toBeInTheDocument();
         expect(getByText(headerNavLinks, /Contact/i)).toBeInTheDocument();
     });
+
+    it('renders the correct four images in body', () => {
+        const expectedImgSrcsArr = [
+            "https://tk-assets.lambdaschool.com/bcf76f62-2431-4c22-b466-2e711f3da2b9_ui-i-bakery-main-header.png",
+            "https://tk-assets.lambdaschool.com/297378d6-9c89-430f-9d2e-46ae3d5edce8_ui-i-bakery-cupcake-i.png",
+            "https://tk-assets.lambdaschool.com/7393a8fd-c8e5-4003-921f-79e0d546d02c_ui-i-bakery-cookies.png", "https://tk-assets.lambdaschool.com/ab0cb095-5900-476c-b042-aea065d3dbbf_ui-i-bakery-celebrate.png"
+        ];
+        const allImages = Array.from(container.querySelectorAll('img'));
+        const allImageSrcs = allImages.map(img => img.src)
+
+        expect(allImages.length).toBe(4);
+        expect(allImageSrcs).toEqual(expect.arrayContaining(expectedImgSrcsArr));
+    });
     
+
 });
 
