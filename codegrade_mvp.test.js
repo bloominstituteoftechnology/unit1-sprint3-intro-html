@@ -25,6 +25,21 @@ describe('index.html', () => {
         const regex = /Sweet Eats Bakery/i;
         expect(headerTitle).toMatch(regex);
     });
+
+    it('renders the correct five links in header nav', () => {
+        const headerNavLinks = container.querySelector('header nav');
+        let headerNavLinkTextArr = headerNavLinks.innerHTML.split(/<a /i);
+        // shift is to get rid of initial index that splits before the a tag
+        headerNavLinkTextArr.shift();
+
+        expect(headerNavLinkTextArr.length).toBe(5);
+
+        expect(getByText(headerNavLinks, /About/i)).toBeInTheDocument();
+        expect(getByText(headerNavLinks, /Cookies/i)).toBeInTheDocument();
+        expect(getByText(headerNavLinks, /Weddings/i)).toBeInTheDocument();
+        expect(getByText(headerNavLinks, /Catering/i)).toBeInTheDocument();
+        expect(getByText(headerNavLinks, /Contact/i)).toBeInTheDocument();
+    });
     
 });
 
