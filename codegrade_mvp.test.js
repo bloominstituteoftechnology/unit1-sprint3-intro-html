@@ -60,5 +60,21 @@ describe('index.html', () => {
     });
     
 
+    it('renders the correct five links in footer nav', () => {
+        const footerNavLinks = container.querySelector('footer nav');
+        let footerNavLinkTextArr = footerNavLinks.innerHTML.split(/<a /i);
+        // shift is to get rid of initial index that splits before the a tag
+        footerNavLinkTextArr.shift();
+
+        expect(footerNavLinkTextArr.length).toBe(5);
+
+        expect(getByText(footerNavLinks, /About/i)).toBeInTheDocument();
+        expect(getByText(footerNavLinks, /Cookies/i)).toBeInTheDocument();
+        expect(getByText(footerNavLinks, /Weddings/i)).toBeInTheDocument();
+        expect(getByText(footerNavLinks, /Catering/i)).toBeInTheDocument();
+        expect(getByText(footerNavLinks, /Contact/i)).toBeInTheDocument();
+    });
+
+
 });
 
