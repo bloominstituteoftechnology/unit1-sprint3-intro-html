@@ -19,4 +19,12 @@ describe('index.html', () => {
         dom = new JSDOM(html, { runScripts: 'dangerously' });
         container = dom.window.document.body;
     });
+
+    it('renders a header title', () => {
+        const headerTitle = container.querySelector('h1').innerHTML;
+        const regex = /Sweet Eats Bakery/i;
+        expect(headerTitle).toMatch(regex);
+    });
+    
 });
+
