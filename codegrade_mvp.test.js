@@ -20,6 +20,11 @@ describe('index.html', () => {
         container = dom.window.document.body;
     });
 
+    it('renders a with an external stylesheet', () => {
+        const cssLinkTag = dom.window.document.head.querySelector('link[rel="stylesheet"]');
+        expect(cssLinkTag).toBeInTheDocument();
+    });
+
     it('renders a header title', () => {
         const headerTitle = container.querySelector('h1').innerHTML;
         const regex = /Sweet Eats Bakery/i;
@@ -75,6 +80,21 @@ describe('index.html', () => {
         expect(getByText(footerNavLinks, /Contact/i)).toBeInTheDocument();
     });
 
+    it('renders with semantic address tag', () => {
+        const addressTag = container.querySelector('address');
+        expect(addressTag).toBeInTheDocument();
+    });
+
+    it('renders with semantic section or article tags', () => {
+        const sectionTag = container.querySelector('section');
+        const articleTag = container.querySelector('article');
+        expect((sectionTag || articleTag)).toBeInTheDocument();
+    });
+
+    it('renders with at least 4 semantic p tags', () => {
+        const pElements = container.querySelectorAll('p');
+        expect(pElements.length).toBeGreaterThanOrEqual(4);
+    });
 
 });
 
