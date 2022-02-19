@@ -21,8 +21,8 @@
     "start": "serve src"
   },
   "repository": {
-    "type": "git",
-    "url": "git@github.com:bloominstituteoftechnology/unit1-sprint3-intro-html.git"
+      "type": "git",
+      "url": "git@github.com:bloominstituteoftechnology/unit1-sprint3-intro-html.git"
   },
   "keywords": [],
   "author": "",
@@ -30,5 +30,5 @@
   "bugs": {
     "url": "git@github.com:bloominstituteoftechnology/unit1-sprint3-intro-html.git/issues"
   },
-  "homepage": "https://github.com/bloominstituteoftechnology/web-Sprint-Challenge-User-Interface-Responsive-Design#readme"
+  "homepage": "https://github.com/bloominstituteoftechnology/unit1-sprint3-intro-html#readme"
 }
