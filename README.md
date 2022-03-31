@@ -40,7 +40,22 @@ Once you've completed the basic structure with HTML, you'll need to add some mor
 
 Your finished project must include all of the following requirements:
  
-### Semantic HTML and CSS Fill-in-the-Blanks
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 [Review the provided design file for the menu page](design-files/Unit1-Sprint3-Module1.png).
 
