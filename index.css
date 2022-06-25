@@ -1,11 +1,10 @@
 /*======= Create a new universal selector that changes the font color to: #3C373B */
 *{
-  color:#3C373B
+  color:#3C373B;
 }
 body{
   width:50%;
   text-align: center;
-  border: 1px solid rgb(255, 255, 255);
   margin: auto
 }
 
@@ -29,7 +28,7 @@ h2, h3, h4, h5, h6 {
 */
 p{
 font-size: 16px;
-font-family: roboto;
+font-family: 'roboto';
 padding: 10px;
 line-height: 1.4;
 }
@@ -55,7 +54,7 @@ img{
   margin: 0 auto;
 }
 
-.container header nav a {
+.pink {
   margin: 0 10px;
   border: 1px solid lightgray;
   padding: 20px;
@@ -78,13 +77,13 @@ color: pink;
 /*======= Create a selector for the about section to have the following styles:
   margin-top: 20px;
 */
-section.about{
+.about{
   margin-top: 20px;
 }
 .contact-section {
   border-top: 1px dashed black;
   padding: 20px 0;
-  margin-top: 20px;
+  /* margin-top: 20px;  */
 }
 
 .contact-section h2 {
@@ -123,6 +122,7 @@ footer a {
   margin: 10px;
   color: black;
   text-decoration: underline;
+  text-align: center;
   
 }
 

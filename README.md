@@ -44,7 +44,7 @@ Your finished project must include all of the following requirements:
 
 [Review the provided design file for the menu page](design-files/Unit1-Sprint3-Module1.png).
 
-* [ ] Create the HTML structure using semantic tags
+* [X] Create the HTML structure using semantic tags
 * [X] Fill in the blanks in the CSS
 
 ### Stretch Tasks
