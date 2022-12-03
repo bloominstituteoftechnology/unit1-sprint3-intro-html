@@ -27,7 +27,7 @@ h2, h3, h4, h5, h6 {
 */
 p {
   font-size: 16px;
-  font-family: roboto;
+  font-family: Gaegu;
   padding: 10px;
   line-height: 1.4;
 }
@@ -64,6 +64,7 @@ img{
   margin-bottom: 20px;
    /*======= create a background property. Set the value to #F87B99 */
   background: #F87B99;
+  font-family: Gaegu;
 }
 
 .container header nav a:hover {
@@ -82,6 +83,7 @@ color: pink;
 .contact-section {
   border-top: 1px dashed black;
   padding: 20px 0;
+  font-family: Gaegu;
 }
 
 .contact-section h2 {
@@ -114,6 +116,7 @@ footer .footer-content h3 {
 
 footer nav {
   display: flex;
+  font-family: Gaegu;
 }
 
 /*======= Create a selector for the anchor tag in the footer to have the following styles:
