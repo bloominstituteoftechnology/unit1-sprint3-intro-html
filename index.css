@@ -88,6 +88,7 @@ footer {
 
 footer .footer-content { 
   margin: 0 auto; 
+  width: 600px;
   /*======= create a width property. Set the value to 600px */
   
 }
